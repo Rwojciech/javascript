@@ -46,6 +46,9 @@ function computerPick() {
 }
 function checkResult() {
   var gameResult;
+  document.getElementById("computerPick").innerHTML = computer.pick
+  document.getElementById("playerPick").innerHTML = player.pick
+  document.getElementById("gameResult").innerHTML = gameResult;
   if (player.pick === computer.pick) {
     gameResult = "tie!"
   }
@@ -86,4 +89,7 @@ if ( (player.score >= 10) || (computer.score >=10) ) {
 document.getElementById("computerPick").innerHTML = computer.pick
 document.getElementById("playerPick").innerHTML = player.pick
 document.getElementById("gameResult").innerHTML = gameResult;
+document.getElementById("playerScore").innerHTML = player.score
+document.getElementById("computerScore").innerHTML = computer.score;
 }
+
